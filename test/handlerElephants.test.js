@@ -39,7 +39,7 @@ describe('Testes da função HandlerElephants', () => {
 
   describe('when the parameter is a valid elephant property', () => {
     it('should return the value of the specified property', () => {
-      expect(handlerElephants('location')).toBe('NE');
+      expect(handlerElephants('location')).toBe('NW');
     });
   });
 });
