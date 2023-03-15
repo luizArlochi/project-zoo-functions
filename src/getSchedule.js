@@ -16,8 +16,8 @@ const getScheduleOfAnimal = (animal) => data
   .availability;
 
 const getOfficeHour = (day) => (data.hours[day]
-  .open !== 0 ? `Open from ${data.hours[day].open}
-  am until ${data.hours[day].close}pm`
+  .open !== 0 ? `Open from ${data.hours[day]
+    .open}am until ${data.hours[day].close}pm`
   : 'CLOSED');
 
 const scheduleDays = (day) => ({
@@ -47,7 +47,5 @@ const getSchedule = (scheduleTarget) => {
   });
   return result;
 };
-
-console.log(getSchedule('Monday'));
 
 module.exports = getSchedule;
